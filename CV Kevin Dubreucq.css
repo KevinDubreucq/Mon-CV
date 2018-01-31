@@ -1,0 +1,179 @@
+.page {
+    width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: auto;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif;
+    grid-template-areas: 
+        "Header Header Header Header"
+        "ConLoiAt ConLoiAt ConLoiAt ConLoiAt"
+        "Formations Formations Formations Formations"
+        "XpProfessionnelles XpProfessionnelles XpProfessionnelles XpProfessionnelles"
+        "ConLangue ConLangue ConLangue ConLangue";
+    justify-content: stretch;	
+    align-items: stretch;
+    background-color: blue;
+
+}
+.Header {
+    grid-area: Header;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "Titre Titre Titre Titre"
+        "CoordoGauche . . CoordoDroite";
+}
+.Titre {
+    grid-area: Titre;
+}
+
+.Coordonnées-1 {
+    grid-area: CoordoGauche;
+}
+
+.Coordonnées-2 {
+    grid-area: CoordoDroite;
+}
+
+.Con-Loi-At {
+    grid-area: ConLoiAt;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "Connaissances Connaissances Loisirs Atouts"
+        "ConGauche ConDroite TxtLoisirs TxtAtouts";
+}
+
+.Connaissances-informatiques {
+    grid-area: Connaissances;
+}
+
+.Texte-info-gauche {
+    grid-area: ConGauche;
+}
+
+.Texte-info-droite {
+    grid-area: ConDroite;
+}
+
+.Loisirs {
+    grid-area: Loisirs;
+}
+
+.Texte-Loisirs {
+    grid-area: TxtLoisirs;
+}
+
+.Atouts-professionnels {
+    grid-area: Atouts;
+}
+
+.Texte-atouts {
+    grid-area: TxtAtouts;
+}
+
+.Formations{
+    grid-area: Formations;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "TitreFormation TitreFormation TitreFormation TitreFormation"
+        "AnFormations TxtFormations TxtFormations TxtFormations";
+}
+
+.Titre-formation {
+    grid-area: TitreFormation;
+}
+
+.Années-formation {
+    grid-area: AnFormations;
+}
+
+.Texte-formation {
+    grid-area: TxtFormations;
+}
+
+.Expériences-professionnelles {
+    grid-area: XpProfessionnelles;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "TitreXpProfessionnelles TitreXpProfessionnelles TitreXpProfessionnelles TitreXpProfessionnelles"
+        "Travail . . ."
+        "AnTravail TxtTravail TxtTravail TxtTravail"
+        "Stage . . ."
+        "AnStage TxtStage TxtStage TxtStage"
+        "JobEtudiant . . ."
+        "AnJobEtudiant TxtJobEtudiant TxtJobEtudiant TxtJobEtudiant";
+}
+
+.Titre-XpProfessionnelles {
+    grid-area: TitreXpProfessionnelles;
+}
+
+.titre-travail {
+    grid-area: Travail;
+}
+
+.Années-travail {
+    grid-area: AnTravail;
+}
+
+.Texte-travail {
+    grid-area: TxtTravail;
+}
+
+.titre-stage {
+    grid-area: Stage;
+}
+
+.Années-stage {
+    grid-area: AnStage;
+}
+
+.Texte-stage {
+    grid-area: TxtStage;
+}
+
+.titre-job-étudiant {
+    grid-area: JobEtudiant;
+}
+
+.Années-job-étudiant {
+    grid-area: AnJobEtudiant;
+}
+
+.Texte-job-étudiant {
+    grid-area: TxtJobEtudiant;
+}
+
+.Tâches-job-étudiant {
+    grid-area: TachesJobEtudiant;
+}
+
+.Texte-tâches-job-étudiant {
+    grid-area: TxtTachesJobEtudiant;
+}
+
+.Connaissances-linguistiques {
+    grid-area: ConLangue;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "TitreLangue TitreLangue TitreLangue TitreLangue"
+        "NomLangue TxtLangues TxtLangues TxtLangues";
+}
+
+.Titre-Langues {
+    grid-area: TitreLangue;
+}
+
+.nom-langues {
+    grid-area: NomLangue;
+}
+
+.Texte-langues {
+    grid-area: TxtLangues;
+}
